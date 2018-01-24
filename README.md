@@ -15,7 +15,7 @@ Usage
 -----
 
 ```shell
-git clone https://github.com/mikepurvis/ros-install-osx.git
+git clone https://github.com/qiao-tw/ros-install-osx.git
 cd ros-install-osx
 ./install
 ```
@@ -127,4 +127,4 @@ If you see this after installation, when trying to execute `rosrun`, then you
 have [System Integrity Protection](https://support.apple.com/en-us/HT204899) enabled.
 The installation script should have detected that and *suggested* a quick fix.
 Please refer to the very last section of 
-[`install`](https://github.com/mikepurvis/ros-install-osx/blob/master/install)
+[`install`](https://github.com/qiao-tw/ros-install-osx/blob/master/install)

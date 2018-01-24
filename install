@@ -94,6 +94,10 @@ do_install()
 
   # ROS infrastructure tools
   brew install libyaml || true
+
+  # update pip2 before using it
+  python2 -m pip install -U --force-reinstall pip
+
   pip2 install -U setuptools rosdep rosinstall_generator wstool rosinstall catkin_tools bloom empy sphinx pycurl
 
   # Rosdep has an issue detecting that qt5 is correctly installed, so preinstall it. This is a keg-only formula,
@@ -191,7 +195,7 @@ do_install()
   echo
   echo "  source ${ROS_INSTALL_DIR}/setup.bash"
   echo
-  
+
   # Check for SIP if on OSX/macOS 10.11 (El Capitan) or later
   if [[ `sw_vers -productVersion` > "10.10" ]]
   then
